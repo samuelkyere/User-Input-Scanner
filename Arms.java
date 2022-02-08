@@ -4,7 +4,7 @@ class Arms{
     //function to check if the number is Arm or not
     static boolean isArm(int n)
     {
-        int temp; digits=0; last=0; sum=0;
+        int temp, digits=0, last=0, sum=0;
         //assigning n into a temp variable
         temp=n;
         //loop executes until the condition becomes false
@@ -37,13 +37,20 @@ class Arms{
      Scanner scan = new Scanner(System.in);
      System.out.print("userInput  value:  ");
      //reads the limit from the user
-     num = sc.nextInt();
+     num = scan.nextInt();
      System.out.println("Armstrong Number up to" +  num+ "are: ");
-     for(int i=0; i<num; i++)
+     
      // function calling
-     if(isArm(i))
+     if  (isArm(num)) 
      //prints the armstrongnumbers
-     System.out.print(i+",");
+     {
+     System.out.print(num + " is yes" );
+     }
+     else
+     {
+         System.out.print(num + "is not ");
+     }
+     
 
     
     }
